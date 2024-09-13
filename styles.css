@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 1000px; /* Increased maximum width */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: calc(100% - 24px);
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+}
+
+.output-box {
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-height: 900px;
+    overflow-y: auto;
+    white-space: pre;
+}
+
+.node {
+    padding: 8px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #a5d6a7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
